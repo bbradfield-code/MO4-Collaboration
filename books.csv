@@ -1,0 +1,16 @@
+# Define the lines to be written to the file
+lines = [
+    'author,book',
+    'J R R Tolkien,The Hobbit',
+    'Lynne Truss,"Eats, Shoots & Leaves"'
+]
+
+# Specify the file path
+file_path = r'C:\Users\bradf\OneDrive\SDEV220\Github\MO4-Collaboration\books.csv'
+
+# Write lines to the file
+with open(file_path, 'w', newline='', encoding='utf-8') as file:
+    for line in lines:
+        file.write(line + '\n')
+
+print(f'File "{file_path}" has been successfully created with the provided content.')
